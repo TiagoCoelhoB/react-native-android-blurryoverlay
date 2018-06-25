@@ -18,19 +18,19 @@ public class BlurryOverlayPackage implements ReactPackage {
     //     mActivity = activity;
     // }
     
-    @Override
+    // @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
         return Collections.emptyList();
         // List<NativeModule> modules = new ArrayList<>();
         // return modules;
     }
 
-    @Override
+    // @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
 
-    @Override
+    // @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
             new BlurryOverlayManager()
