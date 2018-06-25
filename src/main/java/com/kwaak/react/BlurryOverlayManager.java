@@ -7,12 +7,11 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 
 public class BlurryOverlayManager extends SimpleViewManager<BlurryOverlayView> {
+    // private Activity activity;
 
-    private Activity activity;
-
-    public BlurryOverlayManager(Activity activity) {
-        this.activity = activity;
-    }
+    // public BlurryOverlayManager(Activity activity) {
+    //     this.activity = activity;
+    // }
 
     public static final String REACT_CLASS = "RCTBlurryOverlay";
 
@@ -23,7 +22,7 @@ public class BlurryOverlayManager extends SimpleViewManager<BlurryOverlayView> {
 
     @Override
     public BlurryOverlayView createViewInstance(ThemedReactContext context) {
-        BlurryOverlayView c = new BlurryOverlayView(context, activity);
+        BlurryOverlayView c = new BlurryOverlayView(context, context.getCurrentActivity());
 
         return c;
     }
