@@ -12,17 +12,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class BlurryOverlayPackage implements ReactPackage {
-    // private Activity mActivity = null;
-
-    // public BlurryOverlayPackage(Activity activity){
-    //     mActivity = activity;
-    // }
-    
     // @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
         return Collections.emptyList();
-        // List<NativeModule> modules = new ArrayList<>();
-        // return modules;
     }
 
     // @Override
